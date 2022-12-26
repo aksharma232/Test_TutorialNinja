@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-18T13:02:09 IST" name="Suite" finished-at="2022-12-18T13:02:25 IST" duration-ms="15696">
+  <suite started-at="2022-12-26T11:45:54 IST" name="Suite" finished-at="2022-12-26T11:46:09 IST" duration-ms="14968">
     <groups>
     </groups>
-    <test started-at="2022-12-18T13:02:09 IST" name="Test" finished-at="2022-12-18T13:02:17 IST" duration-ms="8351">
+    <test started-at="2022-12-26T11:45:54 IST" name="Test" finished-at="2022-12-26T11:46:04 IST" duration-ms="9196">
       <class name="com.tutorialninja_testcases.tutorialninja_login">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@42a48628]" started-at="2022-12-18T13:02:09 IST" name="LaunchBrowser" finished-at="2022-12-18T13:02:16 IST" duration-ms="6831" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@6aeb35e6]" started-at="2022-12-26T11:45:54 IST" name="LaunchBrowser" finished-at="2022-12-26T11:46:01 IST" duration-ms="6267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="loginWith_Valid_Credentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialninja_testcases.tutorialninja_login@42a48628]" started-at="2022-12-18T13:02:16 IST" name="loginWith_Valid_Credentials" data-provider="logindetials" finished-at="2022-12-18T13:02:17 IST" duration-ms="803" status="PASS">
+        <test-method signature="loginWith_Valid_Credentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialninja_testcases.tutorialninja_login@6aeb35e6]" started-at="2022-12-26T11:46:01 IST" name="loginWith_Valid_Credentials" data-provider="logindetials" finished-at="2022-12-26T11:46:03 IST" duration-ms="2210" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWith_Valid_Credentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@42a48628]" started-at="2022-12-18T13:02:17 IST" name="closeBrowser" finished-at="2022-12-18T13:02:17 IST" duration-ms="664" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@6aeb35e6]" started-at="2022-12-26T11:46:03 IST" name="closeBrowser" finished-at="2022-12-26T11:46:04 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.tutorialninja_testcases.tutorialninja_login -->
     </test> <!-- Test -->
-    <test started-at="2022-12-18T13:02:18 IST" name="Test1" finished-at="2022-12-18T13:02:25 IST" duration-ms="7244">
+    <test started-at="2022-12-26T11:46:04 IST" name="Test1" finished-at="2022-12-26T11:46:09 IST" duration-ms="5656">
       <class name="com.tutorialninja_testcases.tutorialninja_login">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@1573f9fc]" started-at="2022-12-18T13:02:18 IST" name="LaunchBrowser" finished-at="2022-12-18T13:02:23 IST" duration-ms="5833" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@7e6f74c]" started-at="2022-12-26T11:46:04 IST" name="LaunchBrowser" finished-at="2022-12-26T11:46:06 IST" duration-ms="2847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="loginWith_InvalidCredentails(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@1573f9fc]" started-at="2022-12-18T13:02:23 IST" name="loginWith_InvalidCredentails" finished-at="2022-12-18T13:02:24 IST" duration-ms="687" status="PASS">
+        <test-method signature="loginWith_InvalidCredentails(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@7e6f74c]" started-at="2022-12-26T11:46:06 IST" name="loginWith_InvalidCredentails" finished-at="2022-12-26T11:46:09 IST" duration-ms="2135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWith_InvalidCredentails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@1573f9fc]" started-at="2022-12-18T13:02:24 IST" name="closeBrowser" finished-at="2022-12-18T13:02:25 IST" duration-ms="706" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.tutorialninja_testcases.tutorialninja_login@7e6f74c]" started-at="2022-12-26T11:46:09 IST" name="closeBrowser" finished-at="2022-12-26T11:46:09 IST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -13,7 +13,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.tutorialninjaUtil.TestUtil;
-import com.tutorialninjaUtil.screenShot;
 import com.tutorialninja_pages.accountLoginLogoutPage;
 import com.tutorialninja_pages.addToCartPage;
 import com.tutorialninja_pages.mainPage;
@@ -59,9 +58,6 @@ public class tutorialninja_BaseClass
 		acp = new addToCartPage(d);
 		
 		tutil = new TestUtil();
-		//scrnCapture = new screenShot();
-		
-		//d.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
 	}
 	
 	@AfterMethod
