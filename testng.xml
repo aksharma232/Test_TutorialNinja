@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="email" value="ajay@gmail.com"></parameter>
+<parameter name="passwd" value="gmail@123"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+     	<class name="com.tutorialninja_testcases.tutorialninja_login">
+   			<methods>
+			   	<include name="loginWith_Valid_Credentials"/>
+			   	<!-- include name="logoutTutorialNinja" -->
+		   	</methods>
+   		</class>   
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test1">
+    <classes>
+     	<class name="com.tutorialninja_testcases.tutorialninja_login">
+   			<methods>
+			   	<include name="loginWith_InvalidCredentails"/>
+		   	</methods>
+   		</class>   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
