@@ -2,28 +2,28 @@ package com.tutorialninja_testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class tutorialNinjaaddToCart extends tutorialninja_login 
+public class tutorialNinjaaddToCart extends tutorialninja_BaseClass 
 {
-	@BeforeTest	
-	public void setup() throws InterruptedException, IOException
+	
+	public tutorialNinjaaddToCart()
 	{
-		//LaunchBrowser();
-		
-		tutorialninja_login loginf = new tutorialninja_login();
-		
-		loginf.loginWith_Valid_Credentials("ajaysharma@gmail.com", "ajay123");
+		super();
 	}
 
+		
 	@Test
-	public void test1()
+	public void addToCard() throws InterruptedException
 	{
-		System.out.println("testest");
+		
+		String product = "hp";
+		acp.searchProductTextBox(product);
+		acp.searchbutton();
+		acp.addToCartButton();
+		//tutil.TakeScreenshotAfterTest(String addToCard);
 	}
-	
-	
-	
 	
 }

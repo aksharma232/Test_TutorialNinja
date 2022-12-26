@@ -23,7 +23,7 @@ import org.testng.asserts.SoftAssert;
 
 import com.tutorialninja_pages.accountLoginLogoutPage;
 import com.tutorialninja_pages.mainPage;
-import com.tutorialninja_utility.screenShots;
+
 
 public class tutorialninja_login extends tutorialninja_BaseClass {
 
@@ -41,8 +41,8 @@ public class tutorialninja_login extends tutorialninja_BaseClass {
 		mp.Login();
 		loinLogoutPage.Login_account(emailid, password);
 		
-		//sf.assertTrue(loinLogoutPage.successfulLogin().isDisplayed());
-		//sf.assertAll();
+		sf.assertTrue(loinLogoutPage.successfulLogin().isDisplayed());
+		sf.assertAll();
 		//scrnCapture = new screenShots();
 		//scrnCapture.takescreenshot(d, "loginTuturialNinja");				
 		

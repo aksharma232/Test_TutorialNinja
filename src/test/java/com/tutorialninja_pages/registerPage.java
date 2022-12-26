@@ -19,74 +19,69 @@ public class registerPage
 	@FindBy(name = "firstname")
 	WebElement firstname;
 
-
-
-	public WebElement firstName()
+	public void firstName(String fn)
 	{
-		return firstname;
+		firstname.sendKeys(fn);
 	}
 
 	
 	@FindBy(name = "lastname")
 	WebElement lastname;
 	
-	public WebElement lastName()
+	public void lastName(String ln)
 	{
-		return lastname;
+		lastname.sendKeys(ln);
 	}
 	
 	@FindBy(name = "email")
 	WebElement registerEmail;
 	
-	public WebElement registerEmail()
+	public void registerEmail(String remail)
 	{
-		return registerEmail;
+		registerEmail.sendKeys(remail);
 	}
 	
 	@FindBy(name = "telephone")
 	WebElement telephone;
 	
-	public WebElement telephone()
+	public void telephone(String tphone)
 	{
-		return telephone;
+		telephone.sendKeys(tphone);
 	}
 	
-	
-	
+		
 	@FindBy(name = "password")
 	WebElement registerPassword;
 	
-	public WebElement registerPassword()
+	public void registerPassword(String pwd)
 	{
-		return registerPassword;
+		registerPassword.sendKeys(pwd);
 	}
 	
-	
-	
+		
 	@FindBy(name = "confirm")
 	WebElement confirmRegisterPassword;
 	
-	public WebElement confirmRegisterPassword()
+	public void confirmRegisterPassword(String Confirmpwd)
 	{
-		return confirmRegisterPassword;
+		confirmRegisterPassword.sendKeys(Confirmpwd);
 	}
 	
 	@FindBy(name = "agree")
 	WebElement agree;
 	
 	
-	public WebElement agreePrivacy()
+	public void agreePrivacy()
 	{
-		return agree;
+		agree.click();
 	}
 	
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement registerContinue;
 	
-	public WebElement registerContinue()
-	{
-		return registerContinue;
+	public void registerContinue()
+	{		registerContinue.click();
 	}
 	
 
@@ -106,12 +101,5 @@ public class registerPage
 	{
 		return errorMessageAlreadyRegister;
 	}
-
-
-
-
-
-
-
 
 }

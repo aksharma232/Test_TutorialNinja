@@ -27,9 +27,9 @@ public class mainPage
 	@FindBy(linkText = "Register")
 	WebElement Register;
 	
-	public WebElement Register()
+	public void Register()
 	{
-		return Register;
+		Register.click();
 	}
 
 	

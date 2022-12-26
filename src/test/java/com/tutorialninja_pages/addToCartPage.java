@@ -12,73 +12,74 @@ public class addToCartPage
 	public addToCartPage(WebDriver d)
 	{
 		this.d = d;
-		PageFactory.initElements(this.d, d);
+		PageFactory.initElements(d, this);
 	}
 	
 	@FindBy(name = "search")	
 	WebElement searchProductTextBox;
 	
-	public WebElement searchProductTextBox()
+	public void searchProductTextBox(String product)
 	{
-		return searchProductTextBox;
+		//searchProductTextBox.click();
+		searchProductTextBox.sendKeys(product);
 	}
 	
-	@FindBy(linkText = "Iphone")
+	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	WebElement searchProductResult;
 	
-	public WebElement searchProductResult()
+	public void searchbutton()
 	{
-		return searchProductResult;
+		searchProductResult.click();
 		
 	}
 
 	@FindBy(xpath = "//*[text()=\"Add to Cart\"]")
 	WebElement addToCartFromSearchPage;
 	
-	public WebElement addToProductButton()
+	public void addToCartButton()
 	{
-		return addToCartFromSearchPage;
+		addToCartFromSearchPage.click();
 	}
 
 	@FindBy(xpath = "div[@class=\"alert alert-success alert-dismissible\"]")
 	WebElement productAddedConfirmationMessage;
 	
-	public WebElement productConfirmationMessage()
+	public void productConfirmationMessage()
 	{
-		return productAddedConfirmationMessage;
+		productAddedConfirmationMessage.click();
 	}
 	
 	@FindBy(xpath = "//img[@class='img-responsive']")
 	WebElement clickOnSearchProduct;
 	
-	public WebElement clickOnSearchButton()
+	public void clickOnSearchProduct()
 	{
-		return clickOnSearchProduct;
+		clickOnSearchProduct.click();
 		
 	}
 
 	@FindBy(id = "button-cart")
 	WebElement addToCart;
 	
-	public WebElement addToCart()
+	public void addToCart()
 	{
-		return addToCart;
+		addToCart.click();
 	}
 	
 	@FindBy(id= "cart-total")
 	WebElement cartItems;
 	
-	public WebElement cartItems()
+	public void cartItems()
 	{
-		return cartItems;
+		cartItems.click();
 	}
 	
 	@FindBy(xpath = "(//*[@class =\"fa fa-share\"])[2]")
 	WebElement checkOutFromItemsPopup;
 	
-	public WebElement checkOutFromItemsPopup()
+	public void checkOutFromItemsPopup()
 	{
-		return checkOutFromItemsPopup;
+		checkOutFromItemsPopup.click();
 	}
 	
 	
