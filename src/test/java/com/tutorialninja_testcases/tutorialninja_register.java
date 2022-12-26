@@ -11,8 +11,9 @@ import com.tutorialninjaUtil.TestData;
 public class tutorialninja_register extends tutorialninja_BaseClass
 {
 
+	//This test case is to Register the user on the site.
 	private String Testcasename = "getRegisterValiadData";
-	//String testcase = getRegisterValiadData;
+	
 	public tutorialninja_register()
 	{
 		super();
@@ -32,10 +33,10 @@ public class tutorialninja_register extends tutorialninja_BaseClass
 		rp.registerPassword(pwd);
 		rp.confirmRegisterPassword(cpwd);
 		rp.agreePrivacy();
-		tutil.TakeScreenshotAfterTest(Testcasename);		
 		rp.registerContinue();
 		sf.assertTrue(rp.accountCreatedMessage().isDisplayed());
 		sf.assertAll();
+		tutil.TakeScreenshotAfterTest(Testcasename);		
 				
 	}
 }

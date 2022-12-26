@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+//This testcase is to add the prodcut into the cart.
 public class tutorialNinjaaddToCart extends tutorialninja_BaseClass 
 {
 	

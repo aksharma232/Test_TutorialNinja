@@ -24,7 +24,7 @@ import org.testng.asserts.SoftAssert;
 import com.tutorialninja_pages.accountLoginLogoutPage;
 import com.tutorialninja_pages.mainPage;
 
-
+//This testcase is for login with user credentials
 public class tutorialninja_login extends tutorialninja_BaseClass {
 
 	public tutorialninja_login()
