@@ -32,8 +32,7 @@ public class tutorialninja_register extends tutorialninja_BaseClass
 		rp.registerPassword(pwd);
 		rp.confirmRegisterPassword(cpwd);
 		rp.agreePrivacy();
-		tutil.TakeScreenshotAfterTest(Testcasename);
-		
+		tutil.TakeScreenshotAfterTest(Testcasename);		
 		rp.registerContinue();
 		sf.assertTrue(rp.accountCreatedMessage().isDisplayed());
 		sf.assertAll();

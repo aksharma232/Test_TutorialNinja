@@ -23,7 +23,7 @@ public class tutorialNinjaaddToCart extends tutorialninja_BaseClass
 		acp.searchProductTextBox(product);
 		acp.searchbutton();
 		acp.addToCartButton();
-		//tutil.TakeScreenshotAfterTest(String addToCard);
+		
 	}
 	
 }
