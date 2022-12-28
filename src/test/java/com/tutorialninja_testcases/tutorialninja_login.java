@@ -31,6 +31,7 @@ import com.tutorialninja_pages.mainPage;
 //This testcase is for login with user credentials
 public class tutorialninja_login extends tutorialninja_BaseClass {
 
+	public String testconflict = "Conflict string is added";
 	public tutorialninja_login()
 	{
 		super();
