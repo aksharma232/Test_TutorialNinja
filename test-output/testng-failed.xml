@@ -6,8 +6,8 @@
       <class name="com.tutorialninja_testcases.tutorialninja_login">
         <methods>
           <include name="LaunchBrowser"/>
+          <include name="loginWith_Valid_Credentials" invocation-numbers="0"/>
           <include name="closeBrowser"/>
-          <include name="loginWith_InvalidCredentails"/>
         </methods>
       </class> <!-- com.tutorialninja_testcases.tutorialninja_login -->
     </classes>

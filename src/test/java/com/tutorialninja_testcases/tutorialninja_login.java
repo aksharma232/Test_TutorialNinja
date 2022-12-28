@@ -17,12 +17,16 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.tutorialninja_pages.accountLoginLogoutPage;
 import com.tutorialninja_pages.mainPage;
+
+
+@Listeners(com.tutorialninjaUtil.tutorialNinja_Listeners.class)
 
 //This testcase is for login with user credentials
 public class tutorialninja_login extends tutorialninja_BaseClass {
@@ -68,7 +72,6 @@ public class tutorialninja_login extends tutorialninja_BaseClass {
 			
 			}
 */
-
 	@Parameters ({ "email","passwd"})	
 	@Test()
 	public void loginWith_InvalidCredentails(String email, String passwd)
