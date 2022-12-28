@@ -29,8 +29,11 @@ import com.tutorialninja_pages.mainPage;
 @Listeners(com.tutorialninjaUtil.tutorialNinja_Listeners.class)
 
 //This testcase is for login with user credentials
+
 public class tutorialninja_login extends tutorialninja_BaseClass {
 
+ public String testing = "This is added for testing conflict";
+ 
 	public tutorialninja_login()
 	{
 		super();
