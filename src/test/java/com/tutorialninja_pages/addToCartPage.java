@@ -1,10 +1,10 @@
 package com.tutorialninja_pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 public class addToCartPage 
 {
@@ -20,8 +20,23 @@ public class addToCartPage
 	
 	public void searchProductTextBox(String product)
 	{
-		//searchProductTextBox.click();
 		searchProductTextBox.sendKeys(product);
+		searchbutton();
+		
+		WebElement productname = d.findElement(By.xpath("//a[contains(text(),'"+ product +"')]"));
+		
+		System.out.println(productname.getText());
+		
+		String productresult = productname.getText();
+		if(productresult.contains(product))
+		{
+			System.out.println("Product found");
+		}
+		else 
+		{
+			System.out.println("Product Not found");
+			
+		}
 	}
 	
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
@@ -91,6 +106,35 @@ public class addToCartPage
 		return viewCartItemsPopup;
 	}
 	
+	@FindBy(xpath = "//button[@data-original-title = 'Add to Wish List']")
+	WebElement productToWishList;
 	
+	public void productToWishList()
+	{
+		productToWishList.click();
+	}
 	
+	@FindBy(xpath = "//a[@class='btn btn-danger']")
+	WebElement removeButton;
+	
+	public void removeButton() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		removeButton.click();
+	}
+	
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement alertConfirmation;
+	
+	public WebElement removedConfirmation()
+	{
+		return alertConfirmation;
+	}
+	
+	public WebElement addConfirmation()
+	{
+		return alertConfirmation;
+	}
+
 }
+
