@@ -29,6 +29,10 @@ public class tutorialninja_BaseClass
 	TestUtil tutil;
 	public static WebDriver d;
 	
+	String email;
+	
+	String password;
+	
 	@BeforeMethod
 	public void LaunchBrowser() throws InterruptedException
 	{
@@ -58,6 +62,10 @@ public class tutorialninja_BaseClass
 		acp = new addToCartPage(d);
 		
 		tutil = new TestUtil();
+		
+		email = "ajay";
+		
+		password = "ajay@123";
 	}
 	
 	@AfterMethod

@@ -41,6 +41,15 @@ public class mainPage
 		Login.click();
 	}
 
+	@FindBy(linkText = "Wish List")
+	WebElement WishList;
+	
+	public void WishList()
+	{
+		 WishList.click();
+	}
+	
+	
 
 
 }
