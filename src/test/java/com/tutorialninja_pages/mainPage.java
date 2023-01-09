@@ -41,16 +41,27 @@ public class mainPage
 		Login.click();
 	}
 
-	@FindBy(linkText = "Wish List")
-	WebElement WishList;
-	
-	public void WishList()
-	{
-		 WishList.click();
-	}
-	
+
+
+
+
+
+
+
+
 	
 
+
+
+
+	@FindBy(xpath = "//span[contains(text(),'Wish List')]")
+	WebElement wishList;
+	
+	public void wishList()
+	{
+		wishList.click();
+		//return new accountLoginLogoutPage(d);
+	}
 
 }
 

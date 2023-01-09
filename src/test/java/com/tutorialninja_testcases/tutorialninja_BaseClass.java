@@ -28,9 +28,10 @@ public class tutorialninja_BaseClass
 	addToCartPage acp;
 	TestUtil tutil;
 	public static WebDriver d;
-	
 	String email;
 	
+
+	String email_id;
 	String password;
 	
 	@BeforeMethod
@@ -54,6 +55,9 @@ public class tutorialninja_BaseClass
 		d.manage().window().maximize();
 						
 		mp = new mainPage(d);
+		
+		email_id = "ajaysharma@gmail.com";
+		password = "ajaysharma";
 		
 		loinLogoutPage = new accountLoginLogoutPage(d);
 		
